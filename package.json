@@ -16,11 +16,11 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mssql": "^4.3.7",
+    "mssql": "^5.1.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-inject": "^4.3.2",
     "gulp-jscs": "^4.1.0",
     "gulp-jshint": "^2.1.0",

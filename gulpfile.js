@@ -36,7 +36,7 @@ gulp.task('inject', function() {
 /* When the 'gulp serve' command is run, the application starts
    saved changes to any of the jsFiles files will trigger the application
    to restart so the page can be refreshed in the browser to see changes */
-gulp.task('serve', ['style', 'inject'], function() {
+gulp.task('serve', gulp.series(gulp.parallel('style', 'inject'), function() {
     var options = {
         script: 'app.js',
         delayTime: 1,
@@ -50,4 +50,4 @@ gulp.task('serve', ['style', 'inject'], function() {
         .on('restart', function(env) {
             console.log('Restarting...');
         });
-});
+}));
