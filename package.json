@@ -20,7 +20,14 @@
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
     "gulp-inject": "^5.0.2",
     "gulp-jscs": "^4.1.0",
     "gulp-jshint": "^2.1.0",

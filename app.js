@@ -1,7 +1,6 @@
 var express = require('express');
 var config = require('./config.js');
 var favicon = require('serve-favicon');
-var sql = require('mssql');
 
 var app = express();
 
@@ -21,4 +20,8 @@ app.use('/api', apiRouter);
 // Start listening for HTTP requests
 app.listen(config.port, function(err){
     console.log('Running server on port ' + config.port);
+
+    if (err) {
+        console.log(err)
+    }
 });
