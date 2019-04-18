@@ -1,6 +1,5 @@
 var express = require('express');
 var apiRouter = express.Router();
-var sql = require('mssql');
 
 var router = function(dbConfig) {
     var apiController = require('../controllers/apiController')(dbConfig, null);

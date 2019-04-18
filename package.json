@@ -16,19 +16,20 @@
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mssql": "^4.3.7",
+    "mssql": "^5.1.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-inject": "^4.3.2",
-    "gulp-jscs": "^4.1.0",
-    "gulp-jshint": "^2.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-inject": "^5.0.2",
     "gulp-nodemon": "^2.4.2",
-    "jscs": "^3.0.7",
-    "jshint": "^2.10.2",
-    "jshint-esnext": "^2.7.0-3",
-    "jshint-stylish": "^2.2.1",
     "wiredep": "^4.0.0"
   }
 }

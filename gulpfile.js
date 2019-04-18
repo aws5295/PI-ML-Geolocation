@@ -1,17 +1,20 @@
 var gulp = require('gulp');
-var jsHint = require('gulp-jshint');
-var jscs = require('gulp-jscs');
+const eslint = require('gulp-eslint');
 var nodemon = require('gulp-nodemon');
 
 var jsFiles = ['*.js', 'src/**/*.js'];
 
-gulp.task('style', function() {
+gulp.task('lint', () => {
     return gulp.src(jsFiles)
-        .pipe(jsHint())
-        .pipe(jsHint.reporter('jshint-stylish' , {
-            verbose: true
-        }))
-        .pipe(jscs());
+        // eslint() attaches the lint output to the "eslint" property
+        // of the file object so it can be used by other modules.
+        .pipe(eslint({fix: true}))
+        // eslint.format() outputs the lint results to the console.
+        // Alternatively use eslint.formatEach() (see Docs).
+        .pipe(eslint.format())
+        // To have the process exit with an error code (1) on
+        // lint error, return the stream and pipe to failAfterError last.
+        .pipe(eslint.failAfterError());
 });
 
 gulp.task('inject', function() {
@@ -36,7 +39,7 @@ gulp.task('inject', function() {
 /* When the 'gulp serve' command is run, the application starts
    saved changes to any of the jsFiles files will trigger the application
    to restart so the page can be refreshed in the browser to see changes */
-gulp.task('serve', ['style', 'inject'], function() {
+gulp.task('serve', gulp.series(gulp.parallel('lint', 'inject'), function() {
     var options = {
         script: 'app.js',
         delayTime: 1,
@@ -50,4 +53,4 @@ gulp.task('serve', ['style', 'inject'], function() {
         .on('restart', function(env) {
             console.log('Restarting...');
         });
-});
+}));
