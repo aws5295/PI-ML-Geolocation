@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+    <!-- bower:css-->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <!-- endbower -->
+    <!-- bower:js -->
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- inject:css-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/js/piml.js"></script>
+    <!-- endinject -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier/1.0.3/oms.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= apiKey %>"></script>
+	</head>
+	<body>
+    <div class="row">
+      <div class="col-xs-4" id="tour-area">
+        <h1>PI ML Geolocation</h1>
+        <div id="tour-menu">
+        </div>
+        <div id="tour-duration">
+        </div>
+        <div id="tour-tag-count">
+        </div>
+      </div>
+      <div class="col-xs-8" id="map-area">
+      </div>
+    </div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "piml-geolocation",
+  "version": "1.0.0",
+  "description": "A sample application for viewing Tour Run Geolocation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AShaw-OSI/PI-ML-Geolocation"
+  },
+  "author": "Adam Shaw",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mssql": "^4.3.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.3.2",
+    "gulp-jscs": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-nodemon": "^2.4.2",
+    "jscs": "^3.0.7",
+    "jshint": "^2.10.2",
+    "jshint-esnext": "^2.7.0-3",
+    "jshint-stylish": "^2.2.1",
+    "wiredep": "^4.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+<select class="form-control" id="tour-select">
+    <option value="default">Select a Tour...</option>
+    <% for (var i=0; i< data.length; i++) { %>
+        <option value="<%= data[i].TourID %>"><%= data[i].TourName %></option>
+    <% } %>
+</select>

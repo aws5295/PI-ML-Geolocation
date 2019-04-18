@@ -1,0 +1,6 @@
+<select class="form-control" id="tour-run-select">
+    <option value="default">Select a Tour Run...</option>
+    <% for (var i=0; i< data.length; i++) { %>
+        <option value="<%= data[i].TourRunID %>"><%= data[i].TourRunTimeStamp %></option>
+    <% } %>
+</select>

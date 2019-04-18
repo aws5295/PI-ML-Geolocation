@@ -1,0 +1,29 @@
+body {
+  color:#be9b9b;
+  overflow: hidden;
+}
+
+#tour-area, #map-area {
+  height: 100vh;
+  background-color: #293D5D;
+  color: white;
+}
+
+/*
+#tour-area {
+  background-color: #293D5D;
+  color: white;
+}
+*/
+
+#tour-area > * {
+  padding-left: 10px;
+}
+
+.text-error {
+  color: rgb(180, 37, 37);
+}
+
+select {
+  margin-top: 10px;
+}
